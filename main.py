@@ -35,14 +35,12 @@ def tender_payment():
     total_tendered += dimes_amount * .10
     total_tendered += nickels_amount * .05
     total_tendered += pennies_amount * .01
-    print(f"You have input {total_tendered}")
     return total_tendered
 
 
 def dispense_drink(selected_drink_ingredients):
     for ingredient in selected_drink_ingredients:
         resources[ingredient] -= selected_drink_ingredients[ingredient]
-        print(f'subtract {selected_drink_ingredients[ingredient]} from resource {resources[ingredient]} here')
 
 
 def dispense_change(money_deposited, selected_drink_cost):
